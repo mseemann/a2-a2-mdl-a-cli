@@ -1,3 +1,70 @@
-<h1>
-  {{title}}
-</h1>
+<mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+  <mdl-layout-header>
+    <mdl-layout-header-row>
+      <mdl-layout-title>Title</mdl-layout-title>
+      <mdl-layout-spacer></mdl-layout-spacer>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link">Link</a>
+      </nav>
+    </mdl-layout-header-row>
+  </mdl-layout-header>
+  <mdl-layout-drawer>
+    <mdl-layout-title>Title</mdl-layout-title>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link">Link</a>
+    </nav>
+  </mdl-layout-drawer>
+  <mdl-layout-content class="demo-content">
+
+
+    <p>
+      <button mdl-button  mdl-button-type="fab" mdl-colored="primary" mdl-ripple (click)="dialog.show()">
+        <mdl-icon>edit</mdl-icon>
+      </button>
+    </p>
+
+    <mdl-dialog #dialog>
+      <h3 class="mdl-dialog__title">Edit User</h3>
+      <div class="mdl-dialog__content">
+        <mdl-textfield type="text" label="Username" [(ngModel)]="editedUsername" floating-label autofocus></mdl-textfield>
+      </div>
+      <div class="mdl-dialog__actions">
+        <button mdl-button (click)="dialog.close()" mdl-button-type="raised" mdl-colored="primary" mdl-ripple>Save</button>
+        <button mdl-button (click)="dialog.close()" mdl-button-type="raised" mdl-ripple>Cancel</button>
+      </div>
+    </mdl-dialog>
+
+    <p>
+      <button mdl-button mdl-button-type="raised" mdl-colored="accent" mdl-ripple (click)="test()">
+        Alert
+      </button>
+    </p>
+
+    <p>
+      <mdl-icon mdl-badge="1" mdl-badge-overlap>account_box</mdl-icon>
+    </p>
+
+    <p>
+      <mdl-spinner single-color active></mdl-spinner>
+    </p>
+
+    <p>
+      <mdl-textfield type="text" label="Text..." [(ngModel)]="text3" floating-label></mdl-textfield>
+    </p>
+
+    <p>
+      <mdl-checkbox [mdl-ripple]="true" [(ngModel)]="checkbox1"> Checkbox </mdl-checkbox>
+    </p>
+
+    <p>
+      <mdl-radio name="group1" value="1" [(ngModel)]="radioOption" mdl-ripple>Value 1</mdl-radio>
+      <mdl-radio name="group1" value="2" [(ngModel)]="radioOption" mdl-ripple>Value 2</mdl-radio>
+    </p>
+
+    <p>
+      <mdl-switch [(ngModel)]="checkbox1" mdl-ripple>Option 1</mdl-switch>
+    </p>
+
+  </mdl-layout-content>
+</mdl-layout>
