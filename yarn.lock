@@ -70,7 +70,11 @@
     magic-string "^0.16.0"
     source-map "^0.5.6"
 
-"@types/jasmine@2.5.38", "@types/jasmine@^2.5.36":
+"@types/jasmine@2.5.39":
+  version "2.5.39"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.39.tgz#064aaf238cc745d7d6e2e2430e188719051ca9c4"
+
+"@types/jasmine@^2.5.36":
   version "2.5.38"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.38.tgz#a4379124c4921d4e21de54ec74669c9e9b356717"
 
@@ -235,9 +239,9 @@ angular-cli@1.0.0-beta.24:
     yam "0.0.18"
     zone.js "^0.7.2"
 
-angular2-mdl@2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/angular2-mdl/-/angular2-mdl-2.11.0.tgz#3025773c1da95d8508284a6cdcd698f8180e8649"
+angular2-mdl@2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/angular2-mdl/-/angular2-mdl-2.12.0.tgz#6c36c849e4b7dfa26c9dd86988ea49f203b35f82"
 
 ansi-align@^1.1.0:
   version "1.1.0"
