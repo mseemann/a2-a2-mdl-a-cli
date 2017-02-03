@@ -2,8 +2,8 @@
   "name": "a2-mdl-webpack",
   "version": "0.0.0",
   "license": "MIT",
-  "angular-cli": {},
   "scripts": {
+    "ng": "ng",
     "start": "ng serve --aot",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test --watch false",
@@ -29,10 +29,10 @@
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
+    "@angular/cli": "1.0.0-beta.30",
     "@angular/compiler-cli": "2.4.6",
     "@types/jasmine": "2.5.39",
     "@types/node": "7.0.4",
-    "angular-cli": "1.0.0-beta.28.3",
     "codelyzer": "2.0.0-beta.4",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.7.0",
