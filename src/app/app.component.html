@@ -66,5 +66,11 @@
       <mdl-switch [(ngModel)]="checkbox1" mdl-ripple>Option 1</mdl-switch>
     </p>
 
+    <p>
+      <mdl-select floating-label [(ngModel)]="otherCountryCode" placeholder="Country">
+        <mdl-option *ngFor="let c of countries" [value]="c.code">{{c.name}}</mdl-option>
+      </mdl-select>
+    </p>
+
   </mdl-layout-content>
 </mdl-layout>

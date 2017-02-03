@@ -5,7 +5,8 @@ import { HttpModule } from '@angular/http';
 import { MdlModule } from 'angular2-mdl';
 
 import { AppComponent } from './app.component';
-
+import { MdlPopoverModule } from '@angular2-mdl-ext/popover';
+import { MdlSelectModule } from '@angular2-mdl-ext/select';
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +15,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MdlModule
+    MdlModule,
+    MdlPopoverModule,
+    MdlSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
