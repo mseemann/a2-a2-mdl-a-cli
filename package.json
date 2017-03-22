@@ -44,7 +44,7 @@
     "protractor": "4.0.14",
     "ts-node": "3.0.2",
     "tslint": "4.5.1",
-    "typescript": "2.1.4",
+    "typescript": "2.2.1",
     "webdriver-manager": "12.0.4"
   }
 }
